@@ -13,3 +13,6 @@
  *= require_tree .
  *= require_self
  */
+.carousel-item img {
+    height: 250px;
+}
