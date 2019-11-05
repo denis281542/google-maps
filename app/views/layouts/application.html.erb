@@ -116,6 +116,8 @@
             </div>
           </div>
         </div>
+
+        <%= yield %>
        
 <!-- Card group -->
 <div class="container-fluid mt-5" style="background-color: #eee">
@@ -134,7 +136,7 @@
             <div class="card-body">
               <h4 class="card-title">Title</h4>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas reprehenderit   fugiat. Cum qui, eveniet quae molestiae, excepturi beatae eligendi, maiores sunt rerum, provident nisi  quas architecto atque id esse?</p>
-              <a href="#" class="btn btn-primary">Submit</a>
+              <a href="<%= new_item_path%>" class="btn btn-primary">Submit</a>
             </div>
           </div>
         <div class="card">
@@ -166,7 +168,7 @@
 
 
 
-   <%= yield %>
+   
 
     <!-- Button toolbar -->
         <div class="text-center" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
