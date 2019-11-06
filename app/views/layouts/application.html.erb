@@ -89,36 +89,7 @@
         <%= yield %>
        
 <!-- Card group -->
-<div class="container-fluid mt-5" style="background-color: #eee">
-  <div class="container p-5">
-    <div class="card-deck">
-      <div class="card">
-        <img src="p5.jpg" alt="" class="card-img-top">
-          <div class="card-body">
-            <h4 class="card-title">Title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas reprehenderit fugiat. Cum qui, eveniet quae molestiae, excepturi beatae eligendi, maiores sunt rerum, provident nisi quas architecto atque id esse?</p>
-            <a href="#" class="btn btn-primary">Submit</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="p5.jpg" alt="" class="card-img-top">
-            <div class="card-body">
-              <h4 class="card-title">Title</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas reprehenderit   fugiat. Cum qui, eveniet quae molestiae, excepturi beatae eligendi, maiores sunt rerum, provident nisi  quas architecto atque id esse?</p>
-              <a href="<%= new_item_path%>" class="btn btn-primary">Submit</a>
-            </div>
-          </div>
-        <div class="card">
-          <img src="p5.jpg" alt="" class="card-img-top">
-            <div class="card-body">
-              <h4 class="card-title">Title</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas reprehenderit   fugiat. Cum qui, eveniet quae molestiae, excepturi beatae eligendi, maiores sunt rerum, provident nisi  quas architecto atque id esse?</p>
-              <a href="#" class="btn btn-primary">Submit</a>
-            </div>
-        </div>
-    </div>  
-  </div>
-</div>
+    <%= render 'layouts/card_group' %>
 
 <!-- Preview video -->
 <div class="container p-5">
