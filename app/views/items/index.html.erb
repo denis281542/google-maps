@@ -28,5 +28,8 @@
 
 <br>
 
-<%= link_to 'New Item', new_item_path %>
-<%= link_to 'Sing out', destroy_user_session_path, method: :delete %>
+
+<%= button_to "New Item", new_item_path, :id => "open-contacts-dialog-btn", class: "inbox-sf-add-btn tip", method: :get %>
+
+<%= button_to "Sing out", destroy_user_session_path, class: "inbox-sf-add-btn tip", method: :delete %>
+
