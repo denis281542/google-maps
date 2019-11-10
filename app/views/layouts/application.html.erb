@@ -25,15 +25,7 @@
     <%= render 'layouts/carousel' %>
 
 <!-- Modal window -->
-    <%= render 'layouts/modal_window' %>
-
-    <% if user_signed_in? %>
-
-    <p>Hello, <%= current_user.name %> - <%= link_to "Sing out", destroy_user_session_path, method: :delete %> </p>
-
-    <br>
-
-    <% end %>
+    
 
     <%= yield %>
        
