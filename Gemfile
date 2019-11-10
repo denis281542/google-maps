@@ -25,6 +25,7 @@ gem 'bootstrap', '~> 4.0.0'
 
 gem 'devise'
 gem 'mail'
+gem 'stripe'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
