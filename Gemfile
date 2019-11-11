@@ -27,6 +27,9 @@ gem 'devise'
 gem 'mail'
 gem 'stripe'
 
+# Postgresql Gem 
+gem 'pg', '~> 0.18'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
