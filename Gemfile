@@ -7,6 +7,9 @@ ruby '2.5.1'
 gem 'rails', '~> 6.0.0'
 # Postgresql Gem 
 gem 'pg', '~> 0.18'
+
+gem 'sqlite3'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
