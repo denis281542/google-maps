@@ -28,11 +28,38 @@
 
 <br>
 
+<!-- Сarousel -->
+    <%= render 'layouts/carousel' %>
 
 <%= button_to "New Item", new_item_path, :id => "open-contacts-dialog-btn", class: "inbox-sf-add-btn tip", method: :get %>
 
 <%= button_to "Sing out", destroy_user_session_path, class: "inbox-sf-add-btn tip", method: :delete %>
 
 
+<%= button_to "React", react_index_path, class: "inbox-sf-add-btn tip", method: :get %>
 
 
+<%= form_tag charges_path do %>
+  <article>
+    <% if flash[:error].present? %>
+      <div id="error_explanation">
+        <p><%= flash[:error] %></p>
+      </div>
+    <% end %>
+    </article>
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:pk_test_PftUrNnWeOIvbCegQqhtS17r004JBuQgNY] %>"
+          data-description="A month's subscription"
+          data-amount="500"
+          data-locale="auto"></script>
+<% end %>
+
+<!-- Card group -->
+    <%= render 'layouts/card_group' %>
+
+<!-- Preview video -->
+    <%= render 'layouts/preview_video' %>
+
+<!-- Button toolbar -->
+    <%= render 'layouts/button_toolbar' %>
