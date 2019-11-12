@@ -6,7 +6,21 @@
           <div class="card-body">
             <h4 class="card-title">Title</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas reprehenderit fugiat. Cum qui, eveniet quae molestiae, excepturi beatae eligendi, maiores sunt rerum, provident nisi quas architecto atque id esse?</p>
-            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="<%= form_tag charges_path do %>
+              <article>
+                <% if flash[:error].present? %>
+                  <div id="error_explanation">
+                    <p><%= flash[:error] %></p>
+                  </div>
+                <% end %>
+                </article>
+
+              <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                      data-key="<%= Rails.configuration.stripe[:pk_test_PftUrNnWeOIvbCegQqhtS17r004JBuQgNY] %>"
+                      data-description="A month's subscription"
+                      data-amount="500"
+                      data-locale="auto"></script>
+            <% end %></a>
           </div>
         </div>
         <div class="card">
