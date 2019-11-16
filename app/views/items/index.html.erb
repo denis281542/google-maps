@@ -19,7 +19,7 @@
         <td><%= item.description %></td>
         <td><%= item.price %></td>
         <td><%= image_tag(item.image, style: 'width: 50%') %></td>
-        <td><%= link_to 'Show', item %></td>
+        <td><%= button_to 'Show', item, class: "inbox-sf-add-btn tip" %></td>
         <td><%= link_to 'Edit', edit_item_path(item) %></td>
         <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
