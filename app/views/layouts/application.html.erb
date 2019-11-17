@@ -21,14 +21,6 @@
 <!-- Navbar -->
     <%= render 'layouts/navbar' %>
      
-<!-- Search -->
-    <% form_tag items_path, :method => 'get' do %>
-      <p>
-        <%= text_field_tag :search, params[:search] %>
-        <%= submit_tag "Search" %>
-      </p>
-    <% end %>
-
 <!-- Modal window -->
     <%= render 'layouts/modal_window' %>
 
@@ -42,7 +34,11 @@
 
     <%= yield %>
        
-
+<!-- Search -->
+    <% form_tag items_path, :method => 'get' do %>
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search" %>
+    <% end %>
 
 <!-- Footer -->
     <%= render 'layouts/footer' %>
