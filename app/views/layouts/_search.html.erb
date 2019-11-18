@@ -2,3 +2,9 @@
     <%= text_field_tag :search, params[:search] %>
     <%= submit_tag "Search" %>
 <% end %>
+
+<%= simple_form_for @items do |f| %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <%= f.button :price %>
+<% end %>
