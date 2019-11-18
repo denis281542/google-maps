@@ -30,6 +30,7 @@ gem 'devise'
 gem 'mail'
 gem 'stripe'
 gem 'react-rails'
+gem 'simple_form'
 
 
 
